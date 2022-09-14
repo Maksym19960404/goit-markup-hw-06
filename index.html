@@ -444,7 +444,7 @@
     </footer>
       <!--КІНЕЦЬ footer-->
     
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>is-hidden 
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icone" width="18" height="18px">
@@ -452,47 +452,62 @@
           </svg>
         </button>
         <form class="form">
-          <strong class="form-text">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="register-form-group" role="group">
-            <ladel class="form-ladel">
-              <span class="form-input">Ім'я
-              <input type="text">
-                <svg width="18px" height="18px">
+          <strong class="form-text">Залиште свої дані, ми вам передзвонимо</strong> 
+         <div>
+          <label class="register-form-field">
+            <span class="register-form-label">Ім'я</span>
+            <input 
+            class="register-form-input"
+            type="text"
+            name=""
+            required
+            minlength="3">
+             
+                <svg class="register-form-icon" width="18" height="18">
                   <use href="./images/svg/sprite.svg#person"></use>
                 </svg>
-                </span>
-              </ladel>
+             
+            </input>
+          </label>
 
-              <ladel class="form-ladel">
-                <span class="form-input">Телефон
-                <input type="text">
-                <svg width="18px" height="18px">
-                  <use href="./images/svg/sprite.svg#phone"></use>
-                </svg>
-                </span>
-              </ladel>
+          <label class="register-form-field">
+            <span class="register-form-label">Телефон</span>
+            <input class="register-form-input" type="text" name="" required minlength="3">
+            <svg class="register-form-icon" width="18" height="18">
+              <use href="./images/svg/sprite.svg#phone"></use>
+            </svg>
+          
+            </input>
+          </label>
+          <label class="register-form-field">
+            <span class="register-form-label">Пошта </span>
+            <input class="register-form-input" type="text" name="" required minlength="3">
+            
+            <svg class="register-form-icon" width="18" height="18">
+              <use href="./images/svg/sprite.svg#email"></use>
+            </svg>
+          
+            </input>
+          </label>
 
-              <ladel class="form-ladel">
-                <span class="form-input">Пошта
-                <input type="text">
-                <svg width="18px" height="18px">
-                  <use href="./images/svg/sprite.svg#email"></use>
-                </svg>
-                </span>
-              </ladel>
-
-              <ladel class="form-ladel">
-                <span class="form-input">Коментар</span>
-                <textarea name="comment" placeholder="Введіть текст"></textarea>
-              </ladel>
-
-              <ladel class="form-ladel">
-                <span class="form-input">Погоджуюся з розсилкою та приймаю </span>
-                <a href="">Умови договору</a>
-                <input type="checkbox">
-                </ladel>
-              <button type="submit">Відправити</button>
-          </div>
+          <label class="register-form-field  " for="">
+            <span class="register-form-label">Коментар</span>
+            <textarea class="register-form-message" name=""></textarea>
+          </label>
+          
+          </div>  
+          <ladel class="register-form-agreement ">
+            <input type="register-form-checkbox ">
+            <svg class="register-form-icons">
+              <use class="icon-checked" href="./images/svg/sprite.svg#icon-check" width="16" height="15"></use>
+              <use class="icon-unchecked" href="./images/svg/sprite.svg#icon-Vector" width="16" height="15"></use>
+            </svg>
+            <span class="register-form-desc">Погоджуюся з розсилкою та приймаю 
+            <a class="register-form-link" href="" target="_blank">Умови договору</a>
+            </span>
+            
+          </ladel>
+          <button class="register-form-btn" type="submit">Відправити</button>
         </form>
         
       </div>
@@ -500,3 +515,47 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+
+
+
+<!-- <div class="form-group">
+                        <ladel for="name" class="form-ladel">
+                          Ім'я
+                          <span class="form-wrapper">
+                            <input class="form-input" type="text" name="" minlength="2" required id="name">
+                            <svg class="form-svg" width="18px" height="18px">
+                              <use href="./images/svg/sprite.svg#person"></use>
+                            </svg>
+                          </span>
+                        </ladel>
+                        <ladel class="form-ladel">Телефон
+                          <span class="form-wrapper">
+                            <input class="form-input" type="tel" name="">
+                            <svg class="form-svg" width="18px" height="18px">
+                              <use href="./images/svg/sprite.svg#phone"></use>
+                            </svg>
+                          </span>
+                        </ladel>
+                        
+                        <ladel class="form-ladel">Пошта
+                          <span class="form-wrapper">
+                            <input class="form-input" type="email" name="">
+                            <svg class="form-svg" width="18px" height="18px">
+                              <use href="./images/svg/sprite.svg#email"></use>
+                            </svg>
+                          </span>
+                        </ladel>
+                        
+                        <ladel class="form-ladel">
+                          <span class="form-wrapper">Коментар</span>
+                          <textarea class="form-message" rows="5" name="comment" placeholder="Введіть текст"></textarea>
+                        </ladel>
+                        
+                        <ladel class="form-ladel">
+                          <span class="form-wrapper">Погоджуюся з розсилкою та приймаю </span>
+                          <a href="">Умови договору</a>
+                          <input type="checkbox">
+                        </ladel>
+                        <button type="submit">Відправити</button>
+          </div>-->
