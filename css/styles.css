@@ -803,16 +803,20 @@ html {
   flex-direction: column;
 }
 
-.form-text{
+.register-form-title{
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 12px;
+
 }
  .register-form-field{
 display: block;
+position: relative;
+margin-bottom: 10px;
  }
 
  .register-form-input{
@@ -824,6 +828,7 @@ outline: transparent;
 
  .register-form-label{
   display: block;
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.16;
@@ -833,7 +838,10 @@ outline: transparent;
  }
 
  .register-form-icon{
-
+position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
  }
 
  .register-form-message{
