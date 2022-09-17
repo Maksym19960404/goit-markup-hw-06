@@ -464,13 +464,13 @@
             <use href="./images/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="register-form" name="register-form">
+        <form class="register-form">
           <p class="register-form-title">Залиште свої дані, ми вам передзвонимо</p>
         
           <div class="register-form-group" role="group">
             <label class="register-form-field">
                <span class="register-form-label">Ім'я</span>
-              <input class="register-form-input" type="text" name="" required minlength="3" placeholder="&nbsp;" />
+              <input class="register-form-input" type="text" name="user-name" required minlength="3" placeholder="&nbsp;" />
               <svg class="register-form-icon" width="18" height="18">
                 <use href="./images/svg/sprite.svg#person"></use>
               </svg>
@@ -479,7 +479,7 @@
             <label class="register-form-field">
                             <span class="register-form-label">Телефон</span>
 
-              <input class="register-form-input" type="text" name="" required minlength="12" maxlength="12"  placeholder=" "/>
+              <input class="register-form-input" type="text" name="user-phone" required minlength="12" maxlength="12"  placeholder=" "/>
               <svg class="register-form-icon" width="18" height="18">
                 <use href="./images/svg/sprite.svg#phone"></use>
               </svg>
@@ -487,7 +487,7 @@
         
             <label class="register-form-field">
               <span class="register-form-label">Пошта</span>
-              <input class="register-form-input" type="email" name="" required  placeholder=" "/>
+              <input class="register-form-input" type="email" name="user-email" required  placeholder=" "/>
               
               <svg class="register-form-icon" width="18" height="18">
                 <use href="./images/svg/sprite.svg#email"></use>
@@ -496,12 +496,12 @@
         
             <label class="register-form-field">
               <span class="register-form-label">Коментар</span>
-              <textarea class="register-form-message" name="" rows="5" placeholder="Введіть текст"></textarea>
+              <textarea class="register-form-message" name="user-comment" rows="5" placeholder="Введіть текст"></textarea>
             </label>
           </div>
         
           <label class="register-form-agreement">
-            <input class="register-form-checkbox visually-hidden" type="checkbox" name="" id="" />
+            <input class="register-form-checkbox visually-hidden" type="checkbox" name="user-policy"/>
             <svg class="register-form-icons" width="16" height="15">
               <use class="icon-checked" href="./images/svg/sprite.svg#icon-check"></use>
               <use class="icon-unchecked" href="./images/svg/sprite.svg#icon-vector"></use>
