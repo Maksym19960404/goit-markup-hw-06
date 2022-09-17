@@ -858,6 +858,7 @@ html {
 
 .modal-icone{
   fill: var(--primary-text-color);
+  transition: fill var(--anim-fast);
 }
 
 .modal-icone:hover,
